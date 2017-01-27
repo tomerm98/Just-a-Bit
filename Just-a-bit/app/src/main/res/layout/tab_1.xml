@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="test"
-        android:id="@+id/btnText"
-        android:onClick="onClickBtnTest"/>
+        android:id="@+id/btnTest"
+        />
 
 </RelativeLayout>
