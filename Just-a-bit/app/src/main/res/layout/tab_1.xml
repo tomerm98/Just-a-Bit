@@ -15,6 +15,7 @@
         android:layout_centerVertical="true"
         android:text="test"
         android:id="@+id/btnTest"
+
         />
 
 </RelativeLayout>

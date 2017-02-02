@@ -32,15 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        test();
 
-
-
-
-    }
-
-    public void test()
-    {
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -52,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         //connects the tabLayout with the fragments(viewPager)
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
+
+
     }
 
 
