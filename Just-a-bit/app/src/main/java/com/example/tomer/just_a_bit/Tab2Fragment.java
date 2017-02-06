@@ -10,11 +10,16 @@ import android.view.ViewGroup;
  * Created by Tomer on 27/01/2017.
  */
 
-public class Tab2Fragment extends Fragment{
+public class Tab2Fragment extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tab_2, container, false);
         return rootView;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

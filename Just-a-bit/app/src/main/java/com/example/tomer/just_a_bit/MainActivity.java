@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-
+        mViewPager.setCurrentItem(1);
         //connects the tabLayout with the fragments(viewPager)
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
@@ -81,11 +81,11 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "Wallets";
                 case 1:
-                    return "SECTION 2";
+                    return "Main";
                 case 2:
-                    return "SECTION 3";
+                    return "History";
             }
             return null;
         }
