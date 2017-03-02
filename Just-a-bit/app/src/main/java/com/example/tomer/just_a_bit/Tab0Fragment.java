@@ -63,7 +63,7 @@ public class Tab0Fragment extends Fragment implements View.OnClickListener {
                     break;
             }
         }
-        else throw  new RuntimeException("result code is not ok");
+       else  Toast.makeText(getContext(), "Scan Cancelled", Toast.LENGTH_SHORT).show();
     }
 
     private void onClickBtnTest(View view) {

@@ -42,7 +42,7 @@ public class ScannerActivity extends AppCompatActivity implements ZXingScannerVi
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        returnData(DEFAULT_RETURN_DATA);
+        cancelAndReturn();
     }
     void returnData(String data)
     {
@@ -51,5 +51,12 @@ public class ScannerActivity extends AppCompatActivity implements ZXingScannerVi
         setResult(RESULT_OK, resultIntent);
         finish();
     }
+    void cancelAndReturn()
+    {
+        Intent resultIntent = new Intent();
+        setResult(RESULT_CANCELED, resultIntent);
+        finish();
+    }
+
 
 }

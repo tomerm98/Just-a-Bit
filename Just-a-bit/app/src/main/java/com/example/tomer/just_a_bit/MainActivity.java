@@ -20,16 +20,20 @@ public class MainActivity extends AppCompatActivity {
     final String TAB0_NAME = "Wallets";
     final String TAB1_NAME = "Main";
     final String TAB2_NAME = "History";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initializeTabs();
+    }
 
+    private void initializeTabs() {
 
-        // Create the adapter that will return a fragment for each of the three
+        // Create the adapter that will return a fragment for each of the
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
@@ -37,13 +41,7 @@ public class MainActivity extends AppCompatActivity {
         //connects the tabLayout with the fragments(viewPager)
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-
-
     }
-
-
-
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
